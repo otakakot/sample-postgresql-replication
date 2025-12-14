@@ -2,9 +2,9 @@
 -- PostgreSQL database dump
 --
 
-\restrict oREk43DMfBsKeImsqSKuf3e1xvkV55fkfKW3efidhdx4wgKplC2WOmVUmxMCYFj
+\restrict fpL88zloE9mTI2MV8gdV6BLxYCOabhA2jYYgIjGHV52Mjojig4iff9uAELsfdAC
 
--- Dumped from database version 16.11
+-- Dumped from database version 17.7
 -- Dumped by pg_dump version 18.1 (Homebrew)
 
 SET statement_timeout = 0;
@@ -242,5 +242,5 @@ ALTER TABLE ONLY public.grades
 -- PostgreSQL database dump complete
 --
 
-\unrestrict oREk43DMfBsKeImsqSKuf3e1xvkV55fkfKW3efidhdx4wgKplC2WOmVUmxMCYFj
+\unrestrict fpL88zloE9mTI2MV8gdV6BLxYCOabhA2jYYgIjGHV52Mjojig4iff9uAELsfdAC
 
