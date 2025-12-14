@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict fpL88zloE9mTI2MV8gdV6BLxYCOabhA2jYYgIjGHV52Mjojig4iff9uAELsfdAC
+\restrict 0uiEGfSfiX7al3IiPAF3BbvW5OTWTkw87p6TXnFtkI8zoRXVklDuI1aCNpJ2ypP
 
 -- Dumped from database version 17.7
 -- Dumped by pg_dump version 18.1 (Homebrew)
@@ -239,8 +239,45 @@ ALTER TABLE ONLY public.grades
 
 
 --
+-- Name: publication; Type: PUBLICATION; Schema: -; Owner: postgres
+--
+
+CREATE PUBLICATION publication FOR ALL TABLES WITH (publish = 'insert, update, delete, truncate');
+
+
+ALTER PUBLICATION publication OWNER TO postgres;
+
+--
+-- Name: TABLE courses; Type: ACL; Schema: public; Owner: postgres
+--
+
+GRANT SELECT ON TABLE public.courses TO replication_user;
+
+
+--
+-- Name: TABLE grades; Type: ACL; Schema: public; Owner: postgres
+--
+
+GRANT SELECT ON TABLE public.grades TO replication_user;
+
+
+--
+-- Name: TABLE students; Type: ACL; Schema: public; Owner: postgres
+--
+
+GRANT SELECT ON TABLE public.students TO replication_user;
+
+
+--
+-- Name: TABLE teachers; Type: ACL; Schema: public; Owner: postgres
+--
+
+GRANT SELECT ON TABLE public.teachers TO replication_user;
+
+
+--
 -- PostgreSQL database dump complete
 --
 
-\unrestrict fpL88zloE9mTI2MV8gdV6BLxYCOabhA2jYYgIjGHV52Mjojig4iff9uAELsfdAC
+\unrestrict 0uiEGfSfiX7al3IiPAF3BbvW5OTWTkw87p6TXnFtkI8zoRXVklDuI1aCNpJ2ypP
 
