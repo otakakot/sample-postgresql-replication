@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict fpL88zloE9mTI2MV8gdV6BLxYCOabhA2jYYgIjGHV52Mjojig4iff9uAELsfdAC
+\restrict M9akKCLi1WgTEUg1QG8QIKAQrShCmCKg8vMXhY5de76eIlTuD8FY1XJEtPDgq04
 
 -- Dumped from database version 17.7
 -- Dumped by pg_dump version 18.1 (Homebrew)
@@ -242,5 +242,5 @@ ALTER TABLE ONLY public.grades
 -- PostgreSQL database dump complete
 --
 
-\unrestrict fpL88zloE9mTI2MV8gdV6BLxYCOabhA2jYYgIjGHV52Mjojig4iff9uAELsfdAC
+\unrestrict M9akKCLi1WgTEUg1QG8QIKAQrShCmCKg8vMXhY5de76eIlTuD8FY1XJEtPDgq04
 
