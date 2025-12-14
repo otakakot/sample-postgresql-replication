@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict 0uiEGfSfiX7al3IiPAF3BbvW5OTWTkw87p6TXnFtkI8zoRXVklDuI1aCNpJ2ypP
+\restrict oYxcMdix8LR9mOXgzqhqhPuStVSgQXX95nIAaPTlm1MP3O6yZLGgfxvzsVBBh9h
 
 -- Dumped from database version 17.7
 -- Dumped by pg_dump version 18.1 (Homebrew)
@@ -239,15 +239,6 @@ ALTER TABLE ONLY public.grades
 
 
 --
--- Name: publication; Type: PUBLICATION; Schema: -; Owner: postgres
---
-
-CREATE PUBLICATION publication FOR ALL TABLES WITH (publish = 'insert, update, delete, truncate');
-
-
-ALTER PUBLICATION publication OWNER TO postgres;
-
---
 -- Name: TABLE courses; Type: ACL; Schema: public; Owner: postgres
 --
 
@@ -279,5 +270,5 @@ GRANT SELECT ON TABLE public.teachers TO replication_user;
 -- PostgreSQL database dump complete
 --
 
-\unrestrict 0uiEGfSfiX7al3IiPAF3BbvW5OTWTkw87p6TXnFtkI8zoRXVklDuI1aCNpJ2ypP
+\unrestrict oYxcMdix8LR9mOXgzqhqhPuStVSgQXX95nIAaPTlm1MP3O6yZLGgfxvzsVBBh9h
 
