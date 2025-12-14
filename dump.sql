@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict fpL88zloE9mTI2MV8gdV6BLxYCOabhA2jYYgIjGHV52Mjojig4iff9uAELsfdAC
+\restrict oYxcMdix8LR9mOXgzqhqhPuStVSgQXX95nIAaPTlm1MP3O6yZLGgfxvzsVBBh9h
 
 -- Dumped from database version 17.7
 -- Dumped by pg_dump version 18.1 (Homebrew)
@@ -239,8 +239,36 @@ ALTER TABLE ONLY public.grades
 
 
 --
+-- Name: TABLE courses; Type: ACL; Schema: public; Owner: postgres
+--
+
+GRANT SELECT ON TABLE public.courses TO replication_user;
+
+
+--
+-- Name: TABLE grades; Type: ACL; Schema: public; Owner: postgres
+--
+
+GRANT SELECT ON TABLE public.grades TO replication_user;
+
+
+--
+-- Name: TABLE students; Type: ACL; Schema: public; Owner: postgres
+--
+
+GRANT SELECT ON TABLE public.students TO replication_user;
+
+
+--
+-- Name: TABLE teachers; Type: ACL; Schema: public; Owner: postgres
+--
+
+GRANT SELECT ON TABLE public.teachers TO replication_user;
+
+
+--
 -- PostgreSQL database dump complete
 --
 
-\unrestrict fpL88zloE9mTI2MV8gdV6BLxYCOabhA2jYYgIjGHV52Mjojig4iff9uAELsfdAC
+\unrestrict oYxcMdix8LR9mOXgzqhqhPuStVSgQXX95nIAaPTlm1MP3O6yZLGgfxvzsVBBh9h
 
